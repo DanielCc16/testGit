@@ -8,12 +8,30 @@ namespace bancoPoo
 {
     class ClsPersona
     {
-        private int idPersona;
-        private int dni;
-        private string nombre;
-        private string apellidoPat;
-        private string apellidoMat;
+        // Propiedades de la clase
+        public string Nombre { get; set; }
+        public int Edad { get; set; }
 
+        // Constructor de la clase
+        public Persona(string nombre, int edad)
+        {
+            Nombre = nombre;
+            Edad = edad;
+        }
+
+        // Método de la clase
+        public void Saludar()
+        {
+            Console.WriteLine($"¡Hola! Mi nombre es {Nombre} y tengo {Edad} años.");
+        }
+
+        // Método que devuelve una representación en cadena de la persona
+        public override string ToString()
+        {
+            return $"{Nombre}, {Edad} años";
+        }
 
     }
+
+
 }
