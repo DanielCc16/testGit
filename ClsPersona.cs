@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace bancoPoo
 {
+
+    // sube a rama principal
     class ClsPersona
     {
         // Propiedades de la clase
