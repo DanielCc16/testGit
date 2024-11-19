@@ -33,5 +33,23 @@ namespace bancoPoo
 
     }
 
+    // Clase principal para probar la clase Persona
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Crear un objeto de la clase Persona
+            Persona persona1 = new Persona("Juan", 30);
+
+            // Llamar al método Saludar de la clase Persona
+            persona1.Saludar();
+
+            // Imprimir la representación de la persona usando ToString()
+            Console.WriteLine(persona1.ToString());
+
+            Console.ReadKey();
+        }
+    }
+
 
 }
